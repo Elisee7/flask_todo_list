@@ -35,9 +35,19 @@ Ajoute une image pour montrer à quoi ressemble ton projet (ça parle plus que 1
 git clone https://github.com/Elisee7/flask_todo_list.git
 
 
-2. Execute cette commande : py app.py dans le dossier du projet.
+2. Execute cette commande pour installer les dependances : 
 
-S'assurer que flask et sql-alchemy sont installé.
+pip install -r requirements.txt
+
+3. Execute cette commande pour lancer le site :
+
+py app.py dans le dossier du projet.
+
+4. Le site sera disponible à l'adresse : 
+
+http://127.0.0.1:5000
+
+
 
 ### 📦 6. **Technologies utilisées**
 ## Tech utilisées
