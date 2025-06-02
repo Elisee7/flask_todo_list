@@ -1,138 +1,54 @@
-Excellent réflexe Elisée ! Un `README.md` est **la vitrine principale** de ton projet. C’est **la première impression** qu’auront les visiteurs sur GitHub (ou ailleurs).
-Un bon `README.md`, c’est comme un pitch clair et stylé. Il doit **expliquer, rassurer, et donner envie**.
-
----
-
-## 🧰 Structure PRO recommandée pour un `README.md` :
-
-Voici une **checklist claire**, que tu peux copier/coller et adapter 👇
-
----
-
 ### 🧾 1. **Titre du projet**
 
-```markdown
-# BMI Calculator
-```
 
-Nom clair, avec ou sans emoji pour donner du style.
+# Site Todo List
 
----
 
 ### ✍️ 2. **Description courte**
 
-```markdown
-Une application simple qui permet de calculer l'indice de masse corporelle (IMC) à partir de la taille et du poids de l'utilisateur. Projet #1 du challenge "10 projets JS en 10 jours".
-```
+Une application simple qui permet de lister, creer et supprimer et de mettre à jour des tâches à faire. Il s'agit d'un projet que j'ai eu à faire dans le cadre d'une formation en flask sur udemy. 
 
----
+![screenshot](./static/Capture%20d'écran%202025-06-02%20191850.png)
 
-### 📸 3. **Capture d’écran (optionnel mais puissant)**
 
-```markdown
-![screenshot](./screenshot.png)
-```
+### 📸 3. **Capture d’écran du projet**
+
+![screenshot](./static/site_todo.png)
 
 Ajoute une image pour montrer à quoi ressemble ton projet (ça parle plus que 1000 mots).
 
----
 
 ### 🛠 4. **Fonctionnalités**
 
-```markdown
 ## Fonctionnalités
-- Calcul automatique de l’IMC
-- Catégorisation (Maigre, Normal, Surpoids, Obèse)
-- Design responsive
-```
+- Ajout d'une tâche
+- suppréssion d'une tâche
+- mise à jour d'une tâche
 
----
 
-### 🚀 5. **Démo en ligne (si hébergé)**
+### 🧑‍💻 5. **Comment exécuter le projet en local**
 
-```markdown
-## Démo
-🔗 [Voir la démo en ligne](https://elisee7.github.io/bmi_calculator/)
-```
-
----
-
-### 🧑‍💻 6. **Comment exécuter le projet en local**
-
-````markdown
 ## Lancer le projet localement
 
 1. Clone le repo :
-```bash
-git clone https://github.com/Elisee7/bmi_calculator.git
-````
 
-2. Ouvre `index.html` dans ton navigateur préféré.
+git clone https://github.com/Elisee7/flask_todo_list.git
 
-````
 
----
+2. Execute cette commande : py app.py dans le dossier du projet.
 
-### 📦 7. **Technologies utilisées**
-```markdown
+S'assurer que flask et sql-alchemy sont installé.
+
+### 📦 6. **Technologies utilisées**
 ## Tech utilisées
 - HTML5
-- CSS3
-- JavaScript Vanilla
-````
+- Bootstrap
+- flask & sql-alchemy
 
----
 
-### 📁 8. **Structure du dossier (optionnel)**
+### 🧙 7. **Auteur**
 
-```markdown
-## Structure du projet
-
-```
-
-bmi\_calculator/
-│
-├── index.html
-├── script.js
-├── style.css
-└── README.md
-
-````
-
----
-
-### 🧙 9. **Auteur**
-```markdown
 ## Auteur
 👤 Elisée Nikiema  
 - GitHub : [@Elisee7](https://github.com/Elisee7)
-````
 
----
-
-### 💡 Bonus : Badges GitHub (optionnel mais stylé)
-
-Tu peux ajouter des badges comme :
-
-```markdown
-![GitHub repo size](https://img.shields.io/github/repo-size/Elisee7/bmi_calculator)
-![GitHub last commit](https://img.shields.io/github/last-commit/Elisee7/bmi_calculator)
-```
-
----
-
-## ✅ Résumé
-
-| Élément                 | Obligatoire ? | Pourquoi                             |
-| ----------------------- | ------------- | ------------------------------------ |
-| Titre                   | ✅             | Identification claire                |
-| Description             | ✅             | Compréhension rapide                 |
-| Démo ou capture d’écran | ⭐             | Donne envie                          |
-| Instructions d’usage    | ✅             | Pour que n’importe qui puisse tester |
-| Tech utilisées          | ✅             | Professionnalisme                    |
-| Auteur + lien GitHub    | ✅             | Attribution                          |
-| Bonus : badges, crédits | ⭐             | Look pro                             |
-
----
-
-Tu veux que je te génère un `README.md` complet pour ton projet actuel automatiquement avec ton nom et repo ? Ou un template réutilisable en `.md` ?
