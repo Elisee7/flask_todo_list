@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+    {% block title %}  
+        Page d'accueil - Flask TODO List APP
+    {% endblock  %}
+{% block body %}
+    
+    <div class="container my-3">
+        <h2 class="text-center my-3">Liste des täches</h2>
+        <!-- Le formulaire pour l'ajout des tasks. -->
+        <form action="/" method="POST">
+            <div class="mb-3">
+                <label for="title" class="form-label">Titre de tâche.</label>
+                <input type="text" class="form-control" name="title" id="title" aria-describedby="emailHelp">
+                <div id="text" class="form-text">Ajoutez un titre de tâche à faire.</div>
+            </div>
+            <div class="mb-3">
+                <label for="desc" class="form-label">Description de tâche.</label>
+                <input type="text" class="form-control" name="desc" id="desc">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!--  -->
+    <div class="container my-3">
+        {% if alltodo|length == 0 %}
+            Pas de tâches à faire.
+        {% else %}
+        <p>Tes täches :</p>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                <th scope="col">Num. Serie</th>
+                <th scope="col">Titre</th>
+                <th scope="col">Description</th>
+                <th scope="col">Temps</th>
+                </tr>
+            </thead>
+            
+                <tbody>
+                    {% for todo in alltodo %}
+                    <tr>
+                        <th scope="row">{{loop.index}}</th>
+                        <td>{{todo.title}}</td>
+                        <td>{{todo.desc}}</td>
+                        <td>{{todo.date}}</td>
+                        <td>
+                            <a href="/update/{{todo.sno}}" type="button" class="btn btn-outline-success btn-sm mx-1">Modifier</a>
+                            <a href="/delete/{{todo.sno}}" type="button" class="btn btn-outline-danger btn-sm mx-1">Supprimer</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+        </table>
+    </div>
+    {% endif %}
+
+    <!-- Inclusion de javaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+{% endblock body %}

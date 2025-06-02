@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+    {% block title %}  
+        Modifier une tâche - Flask TODO List APP    
+    {% endblock title %}
+{% block body %}
+
+    <div class="container my-3">
+        <h2 class="text-center my-3">Modifier une tâche</h2>
+        <!-- Le formulaire pour l'ajout des tasks. -->
+        <form action="/update/{{todo.sno}}" method="POST">
+            <div class="mb-3">
+                <label for="title" class="form-label">Titre de tâche.</label>
+                <input type="text" class="form-control" value="{{todo.title}}" name="title" id="title" aria-describedby="emailHelp">
+                <div id="text" class="form-text">Ajoutez un titre de tâche à faire.</div>
+            </div>
+            <div class="mb-3">
+                <label for="desc" class="form-label">Description de tâche.</label>
+                <input type="text" class="form-control" value="{{todo.desc}}" name="desc" id="desc">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Modifier</button>
+        </form>
+    </div>
+{% endblock body %}
